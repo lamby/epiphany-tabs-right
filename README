@@ -1,0 +1,33 @@
+Standalone installation
+-----------------------
+
+ * Copy tabs-right/ into the "extensions/" directory of epiphany-extensions
+   checkout.
+
+ * Edit epiphany-extensions's configure.ac:
+   - Add "tabs-right" to ALL_EXTENSIONS
+   - Add "extensions/tabs-right/Makefile" to AC_CONFIG_FILES
+ 
+ * Run: "./autogen.sh --with-extensions=tabs-right"
+
+ * Run: "make"
+
+ * Run: "sudo make install"
+
+
+Debian installation
+-------------------
+
+ * Copy tabs-right/ into the "extensions/" directory of
+   "apt-get source epiphany-extensions".
+
+ * Edit epiphany-extensions's configure.ac:
+   - Add "tabs-right" to ALL_EXTENSIONS
+   - Add "tabs-right" to USEFUL_EXTENSIONS
+   - Add "extensions/tabs-right/Makefile" to AC_CONFIG_FILES
+
+ * Run: ./autogen.sh
+
+ * Build and install the package.
+
+  -- Chris Lamb <lamby@debian.org>  Sun, 11 Oct 2009 14:45:35 +0100
